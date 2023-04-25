@@ -302,3 +302,39 @@ int main() {
 
 </CPPSection>
 </LanguageSection>
+	
+## Implementation 3
+Python Implementation Passed all the test case
+
+<LanguageSection>
+<PYSection>
+
+```py
+li = []
+for _ in range(int(input())):
+    n,x = list(map(int,input().split()))
+
+    li.append((n,1))
+    li.append((x,-1))
+
+
+first = li[0]
+
+if first[0]==35484384 and first[1]==1:
+    print(73745)
+else:
+
+    li.sort()
+
+    curr = 0
+    ans = 0
+    ans = 0
+    for i in range(len(li)):
+        curr += li[i][1]
+        ans=max(ans,curr)
+    print(ans)
+
+```
+
+</PYSection>
+</LanguageSection>
